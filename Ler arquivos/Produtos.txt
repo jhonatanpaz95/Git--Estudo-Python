@@ -1,0 +1,12 @@
+Quantidade  Produto               Compra       Venda       Markup
+---------------------------------------------------------------
+10         Barra de Proteína     R$ 15.00     R$ 25.00     66.67%
+15         Shake de Proteína     R$ 25.00     R$ 40.00     60.00%
+8          Aveia em Flocos       R$ 10.00     R$ 18.00     80.00%
+12         Mix de Nozes          R$ 20.00     R$ 32.00     60.00%
+6          Peito de Frango       R$ 30.00     R$ 50.00     66.67%
+20         Granola               R$ 12.00     R$ 22.00     83.33%
+9          Batata Doce           R$ 5.00      R$ 10.00     100.00%
+7          Abacate               R$ 4.00      R$ 8.00      100.00%
+11         Quinoa                R$ 18.00     R$ 30.00     66.67%
+14         Iogurte Grego         R$ 8.00      R$ 15.00     87.50%
