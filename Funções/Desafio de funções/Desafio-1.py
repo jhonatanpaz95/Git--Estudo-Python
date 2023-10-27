@@ -1,7 +1,12 @@
 
 
 
-def media_lista() -> float:
+def calcular_media(list) -> float:
+
+    """ 
+    Esta função calcula a média de uma lista de números.
+    Retorna a média ou 0 se a lista estiver vazia 
+    """
 
     lista_numeros = []
 
@@ -13,23 +18,29 @@ def media_lista() -> float:
     while True:
 
     
-        opcao = input(f' {menu}Deseja acrescentar numeros a lista:')
+        opcao = input(f'Deseja acrescentar numeros a lista {menu}:')
 
-        if opcao == 'sim':
-            lista_numeros.append(int(input('digite os numeros da lista: ')))
-        elif opcao == 'não':
-            break
-        else:
-            print('digite uma opção valida: ')
+        try:
+            if opcao == 'sim':
+                lista_numeros.append(int(input('digite os numeros da lista: ')))
+            elif opcao == 'não':
+              break
+        except Exception as e:
+            print(f'erro! você não digitou uma opção valida {e}. Digite novamente: ')
 
     print(f'a lista tem os seguintes numeros{lista_numeros}')
 
     try:
-        media_lista = sum(lista_numeros) / len(lista_numeros)
-        print(f'a média da lista é: {media_lista: .2f}')
-        return media_lista
+        resultado = sum(lista_numeros) / len(lista_numeros)
+        print(f'a média da lista é: {resultado: .2f}')
+        return resultado
     except ZeroDivisionError:
         print('A média é 0')
 
 
-media_lista()
+#calcular_media()
+
+
+lista_nova = [2, 5, 8, 10]
+
+calcular_media(lista_nova)
