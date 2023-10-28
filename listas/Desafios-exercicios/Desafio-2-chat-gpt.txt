@@ -1,0 +1,10 @@
+>>>>>>>>>>>>>Desafio 2 - Nível Intermediário<<<<<<<<<<<<<<<<<<<
+
+Crie um programa que permita ao usuário adicionar nomes a uma lista. O programa deve ter as seguintes funcionalidades:
+
+Permitir ao usuário adicionar nomes à lista até que ele opte por parar.
+Depois que o usuário parar de adicionar nomes, o programa deve exibir os seguintes resultados:
+	O número total de nomes na lista.
+	O nome mais curto (com o menor número de caracteres) na lista.
+	O nome mais longo (com o maior número de caracteres) na lista.
+	A média do número de caracteres nos nomes da lista (arredondada para o inteiro mais próximo).

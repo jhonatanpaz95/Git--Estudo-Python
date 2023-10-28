@@ -1,7 +1,7 @@
 
 
 
-def calcular_media(list) -> float:
+def calcular_media() -> float:
 
     """ 
     Esta função calcula a média de uma lista de números.
@@ -40,7 +40,10 @@ def calcular_media(list) -> float:
 
 #calcular_media()
 
+def media_lista_pronta (lista_numeros) -> float:    
+    
+    resultado = sum(lista_numeros) / len(lista_numeros)
+    print(f'a média da lista é: {resultado: .2f}')
 
-lista_nova = [2, 5, 8, 10]
-
-calcular_media(lista_nova)
+    return resultado
+ 

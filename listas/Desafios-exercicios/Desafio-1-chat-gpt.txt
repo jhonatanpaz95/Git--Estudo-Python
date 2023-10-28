@@ -1,0 +1,44 @@
+>>>>>>>>>>>>>PROMPT DE COMANDO PARA O CHAT GPT<<<<<<<<<<<<<<<<<<<
+
+Preciso treinar listas e interações em listas. Crie 5 desafios de níveis básicos e intermediários para que eu possa desenvolver/treinar.
+{REGRAS}
+> você vai me passar os desafios um de cada vez e vai esperar a minha resposta.
+> começar com um desafio simples
+> depois que eu responder você vai analisar o código e se tiver erros, vai me dizer o que tem de errado e quais são as boas praticas
+> vai dar uma nota de 0 a 10 por desafio
+
+
+>>>>>>>>>>>>>>RESPOSTA CHAT GPT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Desafio 1 - Nível Básico:
+Crie uma lista vazia chamada numeros e, em seguida, solicite ao usuário que insira 5 números inteiros. 
+Armazene esses números na lista. 
+Após a entrada, itere pela lista e imprima cada número na tela.
+
+Após tentar resolver o desafio, poste seu código aqui, e eu vou avaliá-lo e fornecer feedback.
+
+>>>>>>>>>>>>> APÓS ENTREGA DO EXERCICIO <<<<<<<<<<<<<
+
+Seu código está no caminho certo e faz exatamente o que foi solicitado no desafio. 
+Aqui está minha avaliação:
+
+Pontuação: 8/10
+
+Feedback:
+
+Seu código está bem estruturado e fácil de entender.
+A lógica de coletar os números do usuário e armazená-los em uma lista está correta.
+O uso da função enumerate é uma boa prática para exibir a posição na lista junto com o número.
+A mensagem "A lista possui esses números até o momento" é informativa e útil para o usuário.
+Sugestões de Melhoria:
+
+Você poderia adicionar comentários ao seu código para torná-lo ainda mais claro e explicativo.
+Uma mensagem inicial explicando o que o programa faz seria útil para o usuário.
+Você poderia adicionar tratamento de erro para garantir que os números inseridos sejam inteiros. 
+Caso contrário, seu programa pode gerar um erro se o usuário inserir algo que não possa ser convertido em um número inteiro.
+No geral, é um bom começo! Se você quiser continuar com o próximo desafio ou fazer alguma alteração no código atual, fique à vontade. 
+Estou aqui para ajudar com qualquer dúvida que você tenha.
+
+>>>>>> feitas as sugestões sugeridas 
+
+
