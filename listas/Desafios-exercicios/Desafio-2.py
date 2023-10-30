@@ -8,16 +8,26 @@ acrescentar_nomes = '''
 
 while True:
 
-    opcao = input(f'Deseja adicionar nomes para a lista? {acrescentar_nomes}: ')
+    opcao = input(f'Deseja adicionar nomes para a lista? {acrescentar_nomes}digite: ')
     
-    if opcao == 'sim':
-        entrada = str(input('Digite os nomes e use espaço para separar os nomes da lista.\nNomes: '))
-        nomes = entrada.split()
-        lista_nomes. append(nomes)
-        lista_nomes = [str(nome) for nome in nomes]
+    try:
+        if opcao == 'sim':
+            nome = input('Digite o nome e a tecla enter para adicionar o nome a lista.\nNomes: ')
+            lista_nomes.append(nome)
+        elif opcao == 'não':
+            break
+        elif opcao != ('sim' or 'não'):
+            print('digite uma opção valida!')
+    except ValueError:
+        print('não é possivel adicionar numeros a lista')
 
-    elif opcao == 'não':
-        break
 
-    
+
+
 print(lista_nomes)
+print(f'O numero total de nomes na lista é: {len(lista_nomes)}')
+
+for nome in lista_nomes:
+    print(nome)
+ 
+    
