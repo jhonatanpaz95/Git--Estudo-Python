@@ -22,12 +22,18 @@ while True:
         print('não é possivel adicionar numeros a lista')
 
 
+string_mais_curta = min(lista_nomes, key=len)
+string_maior = max(lista_nomes, key=len)
+total_caracteres = sum(len(s) for s in lista_nomes)
+Media_caracteres = round(total_caracteres / len(lista_nomes)) 
 
+print(f'a média de caracteres arredontado para o numero inteiro mais proximo é: {Media_caracteres}')
 
-print(lista_nomes)
+print(f'os nomes da lista são:\n{lista_nomes}')
+
 print(f'O numero total de nomes na lista é: {len(lista_nomes)}')
 
-for nome in lista_nomes:
-    print(nome)
- 
-    
+print(f'O nome mais curto da lista é: ({string_mais_curta})')
+
+print(f'O maior nome da lista é: ({string_maior})')
+
