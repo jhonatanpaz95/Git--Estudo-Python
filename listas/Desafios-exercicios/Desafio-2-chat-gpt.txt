@@ -8,3 +8,17 @@ Depois que o usuário parar de adicionar nomes, o programa deve exibir os seguin
 	O nome mais curto (com o menor número de caracteres) na lista.
 	O nome mais longo (com o maior número de caracteres) na lista.
 	A média do número de caracteres nos nomes da lista (arredondada para o inteiro mais próximo).
+
+
+>>>>>>>>>>>>>>RESPOSTA CHAT GPT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Seu código está excelente, e a implementação da verificação para garantir que apenas nomes válidos sejam adicionados à lista é uma melhoria importante. 
+Aqui está a avaliação final:
+
+Pontuação: 10/10
+
+Feedback:
+
+Seu código está bem estruturado e faz exatamente o que foi solicitado.
+A verificação de entrada para garantir que apenas nomes válidos (contendo apenas letras) sejam adicionados à lista é uma adição importante para lidar com entradas inválidas.
+O tratamento de erro para lidar com uma lista vazia também é eficaz.
