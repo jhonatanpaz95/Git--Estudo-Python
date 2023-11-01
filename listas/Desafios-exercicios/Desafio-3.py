@@ -1,11 +1,6 @@
 
 lista_numeros = []
 
-menu =  """
-sim
-não
-"""
-
 while True:
     numeros_usuario = input('Digite os números que deseja acrescentar à lista separados por espaço: ')
     
@@ -18,8 +13,18 @@ fatiamento = [int(numero) for numero in numeros_usuario.split()] # converte a en
 lista_numeros = fatiamento
 print(lista_numeros)
 
-#Calcular a soma de todos os números na lista.
+# Calcula a soma de todos os números na lista.
+soma_da_lista = sum(lista_numeros)
+print(f'a soma dos numeros da lista é: {soma_da_lista}')
 
-for numero in lista_numeros:
-    numero += numero
-    print(numero)
+# verifica o maior numero
+maior_numero = max(lista_numeros)
+print(f'o maior numero da lista é: {maior_numero}')
+
+# verifica o menor numero
+menor_numero = min(lista_numeros)
+print(f'o menor numero da lista é: {menor_numero}')
+
+# soma do maior e menor numero:
+soma_maior_menor = menor_numero + maior_numero
+print(f'A soma do maior e do menor numero é: {soma_maior_menor}')

@@ -3,9 +3,24 @@
 Crie um programa que permita ao usuário inserir uma lista de números inteiros separados por espaços em uma única linha. 
 O programa deve ter as seguintes funcionalidades:
 
-> Receber a entrada do usuário como uma única string de números separados por espaços.
-> Converter essa string em uma lista de números inteiros.
-> Calcular a soma de todos os números na lista.
-> Encontrar o maior número na lista.
-> Encontrar o menor número na lista.
+> Receber a entrada do usuário como uma única string de números separados por espaços. ok
+> Converter essa string em uma lista de números inteiros. ok
+> Calcular a soma de todos os números na lista. ok
+> Encontrar o maior número na lista. ok
+> Encontrar o menor número na lista. ok 
 > Exibir a soma, o maior e o menor número.
+
+>>>>>>>>>>>>>>>>Resposta chat gpt<<<<<<<<<<<<<<<<<<<<<<<
+
+Seu código para o Desafio 3 está muito bem feito!
+Ele faz exatamente o que foi solicitado.
+
+Pontuação: 10/10
+
+Feedback:
+
+Seu código está bem estruturado e fácil de entender.
+A validação para garantir que a entrada do usuário contenha apenas números válidos é uma ótima adição.
+A lógica para calcular a soma, encontrar o maior e o menor número está correta.
+A saída exibindo a soma, o maior e o menor número é clara e informativa.
+Seu código está praticamente perfeito. Você lidou bem com todas as funcionalidades solicitadas no desafio.
