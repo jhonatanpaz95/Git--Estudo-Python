@@ -1,0 +1,11 @@
+>>>>>>>>>>>>>>>>>>>>Desafio 4 - Nível Intermediário<<<<<<<<<<<<<<<<<<<<<<
+
+Crie um programa que permita ao usuário inserir uma lista de palavras ou frases separadas por vírgulas
+(sem espaços após a vírgula) em uma única linha. O programa deve ter as seguintes funcionalidades:
+
+Receber a entrada do usuário como uma única string de palavras ou frases separadas por vírgulas.
+Converter essa string em uma lista de palavras ou frases.
+Contar quantas palavras ou frases estão na lista.
+Encontrar a palavra ou frase mais longa na lista.
+Encontrar a palavra ou frase mais curta na lista.
+Exibir a contagem, a palavra ou frase mais longa e a palavra ou frase mais curta.
