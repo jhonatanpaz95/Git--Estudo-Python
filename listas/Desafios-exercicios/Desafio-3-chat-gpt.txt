@@ -1,0 +1,11 @@
+>>>>>>>>>>>>>Desafio 3 - Nível Intermediário<<<<<<<<<<<<<<<<<<<
+
+Crie um programa que permita ao usuário inserir uma lista de números inteiros separados por espaços em uma única linha. 
+O programa deve ter as seguintes funcionalidades:
+
+> Receber a entrada do usuário como uma única string de números separados por espaços.
+> Converter essa string em uma lista de números inteiros.
+> Calcular a soma de todos os números na lista.
+> Encontrar o maior número na lista.
+> Encontrar o menor número na lista.
+> Exibir a soma, o maior e o menor número.
