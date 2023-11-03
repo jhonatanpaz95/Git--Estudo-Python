@@ -6,6 +6,6 @@ Crie um programa que permita ao usuário inserir uma lista de palavras ou frases
 Receber a entrada do usuário como uma única string de palavras ou frases separadas por vírgulas. ok
 Converter essa string em uma lista de palavras ou frases. ok
 Contar quantas palavras ou frases estão na lista. ok
-Encontrar a palavra ou frase mais longa na lista.
-Encontrar a palavra ou frase mais curta na lista.
-Exibir a contagem, a palavra ou frase mais longa e a palavra ou frase mais curta.
+Encontrar a palavra ou frase mais longa na lista. ok
+Encontrar a palavra ou frase mais curta na lista. ok
+Exibir a contagem, a palavra ou frase mais longa e a palavra ou frase mais curta. ok
