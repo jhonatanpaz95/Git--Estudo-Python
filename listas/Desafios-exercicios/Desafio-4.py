@@ -19,3 +19,11 @@ for palavra in lista_de_palavras:
         maior_palavra = palavra
 
 print(maior_palavra)
+
+menor_palavra = ""
+
+for palavra in lista_de_palavras:
+    if len(palavra) < len(menor_palavra):
+        menor_palavra = palavra
+
+print(menor_palavra)
