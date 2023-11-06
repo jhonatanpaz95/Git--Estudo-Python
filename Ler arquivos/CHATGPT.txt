@@ -1,0 +1,11 @@
+Nome, Idade, Sexo, Receita Mensal, Score de Crédito, Cidade, Estado
+João, 30, Masculino, 4000, 750, São Paulo, SP
+Maria, 25, Feminino, 3200, 680, Rio de Janeiro, RJ
+Carlos, 45, Masculino, 6000, 800, Belo Horizonte, MG
+Ana, 35, Feminino, 4500, 720, Porto Alegre, RS
+Pedro, 22, Masculino, 2800, 650, Curitiba, PR
+Luciana, 28, Feminino, 3800, 710, Salvador, BA
+Ricardo, 40, Masculino, 5500, 790, Fortaleza, CE
+Isabela, 29, Feminino, 4100, 760, Recife, PE
+Fernando, 33, Masculino, 4900, 770, Brasília, DF
+Gabriela, 26, Feminino, 3400, 690, Manaus, AM
