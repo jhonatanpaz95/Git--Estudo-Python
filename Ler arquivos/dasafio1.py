@@ -28,6 +28,7 @@ with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATG
         receita = int(receita)
         maior_receita.append(receita)
         linha = arquivo.readline()
+    arquivo.close()
 
 print(maior_receita)
 
@@ -37,3 +38,25 @@ for receita in maior_receita:
     maior = receita
     if receita > maior:
         print(receita)
+
+
+
+def coluna_lista(nome_arquivo: str, indice_coluna: int):
+
+    coluna = []
+
+    with open(file= nome_arquivo, mode='r', encoding='utf8') as arquivo:
+        linha = arquivo.readline()
+        linha = arquivo.readline()
+        while linha:
+            linha_separada = linha.split(sep=',')
+            coluna_separada = linha_separada[indice_coluna]
+            coluna.append(coluna_separada)
+            linha = arquivo.readline()
+    
+    return coluna
+
+
+leu_com_sucesso = coluna_lista(r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', 2)
+
+print(leu_com_sucesso)
