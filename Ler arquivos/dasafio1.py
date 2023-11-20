@@ -12,12 +12,12 @@ with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATG
         linha = arquivo.readline()
     arquivo.close()
 
-print(media_idades)
-media_idades = sum(media_idades) / len(media_idades)
-print(media_idades)
+#print(media_idades)
+#media_idades = sum(media_idades) / len(media_idades)
+#print(media_idades)
 
 
-maior_receita = []
+receitas_monetarias = []
 
 with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', mode='r', encoding='utf-8') as arquivo:
     arquivo.readline()
@@ -25,64 +25,54 @@ with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATG
     while linha:
         linha_separada = linha.split(sep=',')
         receita = linha_separada[3]
-        receita = int(receita)
-        maior_receita.append(receita)
+        receita = float(receita)
+        receitas_monetarias.append(receita)
         linha = arquivo.readline()
     arquivo.close()
 
-print(maior_receita)
+print(receitas_monetarias)
 
-maior =  None
+maior_receita = max(receitas_monetarias)
+menor_receita = min(receitas_monetarias)
 
-for receita in maior_receita:
-    maior = receita
-    if receita > maior:
-        print(receita)
+#for receita in receitas_monetarias:
+    #if receita > maior_receita:
+        #maior_receita = receita
+
+print(f'a maior receita é R$ {maior_receita:.2f}')
+print(f'a menor receita é R$ {menor_receita:.2f}')
 
 
-
-def coluna_lista(nome_arquivo: str, indice_coluna: int):
-
-    coluna = []
-
-    with open(file= nome_arquivo, mode='r', encoding='utf8') as arquivo:
+score_credito = []
+with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', mode='r', encoding='utf-8') as arquivo:
+    arquivo.readline()
+    linha = arquivo.readline()
+    while linha:
+        linha_separada = linha.split(sep=',')
+        score = linha_separada[4]
+        score = int(score)
+        score_credito.append(score)
         linha = arquivo.readline()
-        linha = arquivo.readline()
-        while linha:
-            linha_separada = linha.split(sep=',')
-            coluna_separada = linha_separada[indice_coluna]
-            coluna.append(coluna_separada)
-            linha = arquivo.readline()
-    
-    return coluna
 
 
-leu_com_sucesso = coluna_lista(r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', 3)
+menor_score = min(score_credito)
+maior_score = max(score_credito)
+media_score = sum(score_credito) / len(score_credito)
+print(f'o maior score de credito é {maior_score}')
+print(f'o menor score de credito é {menor_score}')
+print(f'a média de score é {media_score}')
 
-print(leu_com_sucesso)
 
-
-def extrai_linha_txt(nome_arquivo: str, numero_linha: int):
-
-  # leia o arquivo com o comando 'with' utilizando o parametro 'nome_arquivo'
-  # extraia a linha do arquivo utilizando o parametro 'numero_linha'
-  # quebre a linha em palavras com o comando split, note que o separador é um espaço ' '
-
-  palavras_linha = []
-
-  with open(nome_arquivo, mode='r', encoding='utf8') as arquivo:
+pessoas_maiores_30 = []
+with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', mode='r', encoding='utf-8') as arquivo:
     linha = arquivo.readline()
     linha = arquivo.readline()
     while linha:
-      linha_separada = linha.split(sep=',')
-      palavras_linha.append(linha_separada)
-      linha = arquivo.readline()
+        linha_separada = linha.split(sep= ',')
+        idade = linha_separada[1]
+        idade = int(idade)
+        pessoas_maiores_30.append(idade)
+        linha = arquivo.readline()
+    arquivo.close()
 
-
-  return palavras_linha
-
-verifca_linha = extrai_linha_txt(r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', 2)
-print(verifca_linha)
-
-#linha10 = extrai_linha_txt(nome_arquivo='./musica.txt', numero_linha=10)
-#print(linha10)
+print(pessoas_maiores_30)
