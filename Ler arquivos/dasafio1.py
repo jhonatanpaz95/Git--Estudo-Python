@@ -71,8 +71,28 @@ with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATG
         linha_separada = linha.split(sep= ',')
         idade = linha_separada[1]
         idade = int(idade)
-        pessoas_maiores_30.append(idade)
+        if idade >= 30:
+            pessoas_maiores_30.append(linha_separada)
         linha = arquivo.readline()
-    arquivo.close()
+    
+for pessoa in pessoas_maiores_30:
+    print(pessoa)
 
-print(pessoas_maiores_30)
+
+ranking_score = []
+indice = 0
+with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', mode='r', encoding='utf-8') as arquivo:
+    arquivo.readline()
+    linha = arquivo.readline()
+    while linha:
+        linha_separada = linha.split(sep=',')
+        score = linha_separada
+        ranking_score.append(score)
+        linha = arquivo.readline()
+
+indice = 0
+for linha in ranking_score:
+    if linha[4] > min(linha[4]):
+        ranking_score.append(linha)
+
+print(ranking_score)
