@@ -57,6 +57,32 @@ def coluna_lista(nome_arquivo: str, indice_coluna: int):
     return coluna
 
 
-leu_com_sucesso = coluna_lista(r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', 2)
+leu_com_sucesso = coluna_lista(r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', 3)
 
 print(leu_com_sucesso)
+
+
+def extrai_linha_txt(nome_arquivo: str, numero_linha: int):
+
+  # leia o arquivo com o comando 'with' utilizando o parametro 'nome_arquivo'
+  # extraia a linha do arquivo utilizando o parametro 'numero_linha'
+  # quebre a linha em palavras com o comando split, note que o separador é um espaço ' '
+
+  palavras_linha = []
+
+  with open(nome_arquivo, mode='r', encoding='utf8') as arquivo:
+    linha = arquivo.readline()
+    linha = arquivo.readline()
+    while linha:
+      linha_separada = linha.split(sep=',')
+      palavras_linha.append(linha_separada)
+      linha = arquivo.readline()
+
+
+  return palavras_linha
+
+verifca_linha = extrai_linha_txt(r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATGPT.txt', 2)
+print(verifca_linha)
+
+#linha10 = extrai_linha_txt(nome_arquivo='./musica.txt', numero_linha=10)
+#print(linha10)
