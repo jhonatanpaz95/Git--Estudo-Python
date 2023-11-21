@@ -90,9 +90,7 @@ with open(file= r'C:\Users\Samsung\Desktop\Git- Estudo Python\Ler arquivos\CHATG
         ranking_score.append(score)
         linha = arquivo.readline()
 
-indice = 0
 for linha in ranking_score:
-    if linha[4] > min(linha[4]):
-        ranking_score.append(linha)
-
-print(ranking_score)
+    linha[4] = int(linha[4])
+    top_1 = max(linha[4])
+    print(top_1)
